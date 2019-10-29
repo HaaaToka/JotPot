@@ -29,7 +29,6 @@ function checkInputxss($data)
 }
 
 $message = "";
-echo print_r($_SESSION);
 
 
 if(isset($_POST['entry_add'])){

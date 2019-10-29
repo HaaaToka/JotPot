@@ -7,9 +7,8 @@ function checkInput($data)
 {
     switch($_COOKIE['security_level'])
     {
-        case "0" :        
-            #$data = no_check($data);            
-            $data = sqli_check_1($data);
+        case "0" :                  
+            $data = no_check($data);
             break;
         case "1" :
             $data = sqli_check_1($data);
@@ -57,7 +56,7 @@ if(isset($_GET['snackID'])){
     $snack = $_GET['snackID'];
     $sql = "SELECT * FROM aburcubur WHERE aa_id='".checkInput($snack)."'";
     #$sql = "SELECT * FROM aburcubur";
-    echo $sql;
+    #echo $sql;
     $result = $newconn->conn->query($sql);
 
     if(!$result){ 

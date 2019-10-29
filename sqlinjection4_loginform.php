@@ -49,7 +49,7 @@ function checkInput($data)
 if(isset($_POST['form'])){
 
     $sql = "SELECT * FROM heroes WHERE name='".checkInput($_POST["name"])."' AND password='".checkInput($_POST['password'])."'";
-    echo $sql."<br>";
+    #echo $sql."<br>";
     $result = $newconn->conn->query($sql);
 
     if(!$result){ 

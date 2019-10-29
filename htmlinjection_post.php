@@ -39,30 +39,33 @@ function checkInput($data)
         <button type="submit" name="form" value="submit">Go</button>  
 
     </form>
-</div>
 
 <?php
 
-if(isset($_POST["firstname"]) && isset($_POST["lastname"]))
-{   
+    if(isset($_POST["firstname"]) && isset($_POST["lastname"]))
+    {   
 
-    #echo print_r($_POST);
+        #echo print_r($_POST);
 
-    $firstname = $_POST["firstname"];
-    $lastname = $_POST["lastname"];    
+        $firstname = $_POST["firstname"];
+        $lastname = $_POST["lastname"];    
 
-    if($firstname == "" or $lastname == "")
-    {
+        if($firstname == "" or $lastname == "")
+        {
 
-        echo "<font color=\"red\">Please enter both fields...</font>";       
+            echo "<font color=\"red\">Please enter both fields...</font>";       
+
+        }
+
+        else            
+        { 
+            echo "Welcome ".checkInput($firstname)." ".checkInput($lastname);   
+        }
 
     }
-
-    else            
-    { 
-        echo "Welcome ".checkInput($firstname)." ".checkInput($lastname);   
-    }
-
-}
 
 ?>
+
+</div>
+
+

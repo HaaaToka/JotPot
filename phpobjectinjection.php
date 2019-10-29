@@ -56,7 +56,7 @@ a:2:{i:0;s:4:"name";i:1;s:25:"<script>alert(1)</script>";}
 O:9:"aburcubur":1:{s:4:"name";s:17:"system('whoami');";}
 
 
-Prevent:
+Prevention:
 Don't use unserialize function. You should use JSON(Java Script Object Notation) for keeping your data.
 
 -->

