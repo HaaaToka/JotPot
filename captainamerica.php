@@ -1,0 +1,1 @@
+<?php  echo "Patience is the key of victory"; ?>

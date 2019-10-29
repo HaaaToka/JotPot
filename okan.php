@@ -1,0 +1,4 @@
+1	ULKER	CIKOLATALI GOFRET	123
+2	ETI	CANGA	103
+3	ETI	CRAX	63
+<?php echo "okan";			?>

